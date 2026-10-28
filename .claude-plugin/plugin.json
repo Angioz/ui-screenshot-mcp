@@ -1,0 +1,26 @@
+{
+  "name": "ui-screenshot-mcp",
+  "displayName": "UI Screenshot",
+  "version": "1.0.0",
+  "description": "Search and download real app and website screens (Refero, Mobbin, ScreensDesign, Dribbble) into a local UI library, and capture screenshots of any web page",
+  "author": { "name": "Angioz", "url": "https://github.com/Angioz" },
+  "homepage": "https://github.com/Angioz/ui-screenshot-mcp",
+  "repository": "https://github.com/Angioz/ui-screenshot-mcp",
+  "license": "MIT",
+  "keywords": ["ui", "design", "screenshots", "inspiration", "mobbin", "refero", "playwright", "mcp"],
+  "userConfig": {
+    "library_dir": {
+      "type": "directory",
+      "title": "UI library folder",
+      "description": "Where downloaded screens are saved. Leave empty to use ~/.ui-library",
+      "default": ""
+    }
+  },
+  "mcpServers": {
+    "ui-screenshot": {
+      "command": "npx",
+      "args": ["-y", "ui-screenshot-mcp@1"],
+      "env": { "UI_LIBRARY_DIR": "${user_config.library_dir}" }
+    }
+  }
+}

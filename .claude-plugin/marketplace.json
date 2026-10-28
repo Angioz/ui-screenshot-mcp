@@ -1,0 +1,11 @@
+{
+  "name": "angioz",
+  "owner": { "name": "Angioz", "url": "https://github.com/Angioz" },
+  "plugins": [
+    {
+      "name": "ui-screenshot-mcp",
+      "source": "./",
+      "description": "Search and download real app and website screens into a local UI library, and capture web page screenshots"
+    }
+  ]
+}
